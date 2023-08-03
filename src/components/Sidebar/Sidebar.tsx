@@ -8,11 +8,8 @@ const Sidebar = () => {
     { topMenu: '대메뉴', bottomMenu: ['소메뉴', '소메뉴'] }
   ];
   return (
-    <div className='w-[256px]'>
-      <div>
-        <p>대메뉴 토글</p>
-        <p>대메뉴 토글</p>
-      </div>
+    <div className='flex flex-col gap-3 w-[256px] bg-[#F6F7F8]'>
+      <div></div>
       {MenuCategories.map((category: MenuType, i: number) => (
         <Menu key={i} category={category}></Menu>
       ))}
